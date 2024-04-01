@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar bg-primary fixed-top py-4">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white ms-5 d-flex align-items-center" href="#">
+                    <img class="pb-1" src="https://orange-caraibe.twic.pics/2022-09/logo_apple_white.png" alt="">
+                    <span class="ps-3 fs-5">Apple</span>
+                </a>
+
+                <ul class="ms_ul">
+                    <li class="nav-item dropdown">
+                        <a class="text-white me-5 pe-5 nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            only staff
+                        </a>
+                        <ul class="dropdown-menu me-5">
+                            <li><a class="dropdown-item" href="#">alessio@Gmail.com</a></li>
+                            <li><a class="dropdown-item" href="#">alessandro@Gmail.com</a></li>
+                            <li><a class="dropdown-item" href="#">luana@Gmail.com</a></li>
+                            <li><a class="dropdown-item" href="#">antonio@Gmail.com</a></li>
+                            <li><a class="dropdown-item" href="#">beba@Gmail.com</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="position_main vh-100 d-flex flex-column justify-content-center ">
+        <div class="w-50 containerInput py-5 px-3 pb-4 rounded bg-body-secondary mb-5">
+            <label class="ps-2 pb-2" for="name">Name (optional)</label>
+            <input class="w-100 mb-4 p-2" id="name" type="text" placeholder="es. Alessio" required>
+            <label class="ps-2 pb-2" for="surname">Surname (optional)</label>
+            <input class="w-100 mb-4 p-2" id="surname" type="text" placeholder="es. Caringella" required>
+            <label class="ps-2 pb-2" for="userEmail">E-mail</label>
+            <input class="w-100 mb-4 p-2" type="email" id="userEmail" placeholder="es. Alessio@gmail.com">
+            <button class="btn btn-primary" id="pushButton">Push</button>
+        </div>
+        <div class="errorMessageNone errorMessage mb-3 d-flex flex-column justify-content-between">
+            <div class="w-100 d-flex justify-content-end me-5" class="crossCloseExist">
+                <button id="errorButtonExit" class="crossCloseExist">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-x-lg " viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.
